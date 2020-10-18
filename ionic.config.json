@@ -1,0 +1,7 @@
+{
+  "name": "LabAM",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
