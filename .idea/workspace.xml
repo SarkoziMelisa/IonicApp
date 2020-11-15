@@ -15,11 +15,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/core" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Info/MPP/Lab MPP REST" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="ts.external.directory.path" value="C:\Users\user\Desktop\LabAM\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\LabAM\src" />
       <recent name="C:\Users\user\Desktop\LabAM\src\core" />
       <recent name="C:\Users\user\Desktop\LabAM\src\todo" />
     </key>
@@ -35,6 +37,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="renders without crashing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/App.test.tsx" />
+      <test-names>
+        <test-name value="renders without crashing" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.renders without crashing" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -52,6 +74,9 @@
       <workItem from="1602832753558" duration="642000" />
       <workItem from="1604222026716" duration="777000" />
       <workItem from="1604226553363" duration="889000" />
+      <workItem from="1604302872827" duration="138000" />
+      <workItem from="1605429133540" duration="636000" />
+      <workItem from="1605441743795" duration="2402000" />
     </task>
     <servers />
   </component>
