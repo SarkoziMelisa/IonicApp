@@ -1,6 +1,6 @@
 {
   "appId": "io.ionic.starter",
-  "appName": "LabAM",
+  "appName": "ionicProject",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",

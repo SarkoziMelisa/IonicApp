@@ -2,7 +2,7 @@ import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ItemEdit, ItemList } from './todo';
+import { ActorEdit, ActorList } from './actors';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -22,8 +22,8 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import { ItemProvider } from './todo/ItemProvider';
-import { AuthProvider, Login, PrivateRoute } from './auth';
+import { ActorProvider } from './actors/ActorProvider';
+import {AuthProvider, Login, PrivateRoute} from "./auth";
 
 const App: React.FC = () => (
     <IonApp>
@@ -31,12 +31,12 @@ const App: React.FC = () => (
             <IonRouterOutlet>
                 <AuthProvider>
                     <Route path="/login" component={Login} exact={true}/>
-                    <ItemProvider>
-                        <PrivateRoute path="/items" component={ItemList} exact={true}/>
-                        <PrivateRoute path="/item" component={ItemEdit} exact={true}/>
-                        <PrivateRoute path="/item/:id" component={ItemEdit} exact={true}/>
-                    </ItemProvider>
-                    <Route exact path="/" render={() => <Redirect to="/items"/>}/>
+                    <ActorProvider>
+                        <PrivateRoute path="/actors" component={ActorList} exact={true} />
+                        <PrivateRoute path="/actor" component={ActorEdit} exact={true} />
+                        <PrivateRoute path="/actor/:id" component={ActorEdit} exact={true} />
+                    </ActorProvider>
+                    <Route exact path="/" render={() => <Redirect to="/actors" />} />
                 </AuthProvider>
             </IonRouterOutlet>
         </IonReactRouter>

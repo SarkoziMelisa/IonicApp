@@ -1,3 +1,5 @@
+import {Plugins} from "@capacitor/core";
+
 export const baseUrl = 'localhost:3000';
 
 export const getLogger: (tag: string) => (...args: any) => void =
@@ -28,9 +30,12 @@ export const config = {
     }
 };
 
-export const authConfig = (token?: string) => ({
+export const authConfig = (token?: string, version?: number) => ({
     headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,
+        'ETag': version,
     }
 });
+
+export const { Storage } = Plugins;
